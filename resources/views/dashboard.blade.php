@@ -10,7 +10,7 @@
         </a>
         <x-card class="mb-4">
             {{ $post->body }}
-            <div class="text-xs text-slate-500">
+            <div class="text-xs text-slate-500 mt-2">
                 {{ $post->created_at->diffForHumans() }}
             </div>
         </x-card>
