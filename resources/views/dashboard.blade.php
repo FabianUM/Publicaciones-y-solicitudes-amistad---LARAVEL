@@ -1,6 +1,7 @@
 <x-app-layout>
     <x-container>
-        <form action="" class="px-4 mb-8">
+        <form action="{{ route('posts.store') }}" class="px-4 mb-8" method="POST">
+            @csrf
             <textarea 
                 name="body" 
                 rows="2" 
@@ -10,7 +11,7 @@
 
             <input 
                 type="submit"
-                class="px-4 py-2 bg-yellow-400 text-gray-800 font-semibold sm:rounded-lg text-xs"
+                class="px-4 py-2 bg-yellow-400 text-gray-800 font-semibold sm:rounded-lg text-xs cursor-pointer"
             >
         </form>
 
